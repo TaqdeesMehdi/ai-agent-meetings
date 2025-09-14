@@ -10,8 +10,8 @@ const pricingCardVariants = cva("rounded-lg p-4 py-6 w-full", {
   variants: {
     variant: {
       default: "bg-white text-black",
-      highlighted: "bg-linear-to-br from-[#093C23] to-[#051B16] text-white",
-    }
+      highlighted: "bg-linear-to-br from-[#330c42] to-[#0f061a] text-white",
+    },
   },
   defaultVariants: {
     variant: "default",
@@ -61,7 +61,7 @@ interface Props extends VariantProps<typeof pricingCardVariants> {
   className?: string;
   buttonText: string;
   onClick: () => void;
-};
+}
 
 export const PricingCard = ({
   variant,
@@ -141,4 +141,3 @@ export const PricingCard = ({
     </div>
   );
 };
-
